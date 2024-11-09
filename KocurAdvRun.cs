@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,9 @@ namespace KocurAdvRun
 
             }
             else {
-                Process.Start(textBox1.Text, textBox2.Text);
+                if (File.Exists(textBox1.Text)) {
+                    Process.Start(textBox1.Text, textBox2.Text);
+                }
             }
         }
 
