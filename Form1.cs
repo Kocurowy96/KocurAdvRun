@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace KocurAdvRun
 {
-    public partial class Form1 : Form
+    public partial class KocurAdvRun : Form
     {
-        public Form1()
+        public KocurAdvRun()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
